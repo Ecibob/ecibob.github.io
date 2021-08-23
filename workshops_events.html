@@ -14,14 +14,13 @@
     <meta name="viewport"
         content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta itemprop="name" content="Hallowed Hill Farm">
-    <meta name="author" content="Hallowed Hill Farm">
+    <meta name="author" content="Keith Becker">
     <meta name="copyright" content="Hallowed Hill Farm" />
     <meta name="description" content="Hallowed Hill Farm" />
     <meta property="og:title" content="Hallowed Hill Farm" />
     <meta property="og:description" content="Hallowed Hill Farm" />
-    <meta property="og:type" content="non_profit" />
 
-    <link rel="icon" href="favicon.ico" sizes="16x16" type="image/png">
+    <link rel="icon" href="favicon.ico" Qsizes="16x16" type="image/png">
 
     <link href="styles.css" rel="stylesheet" type="text/css">
     <link href="flipboxstyle.css" rel="stylesheet" type="text/css">
@@ -65,10 +64,10 @@
             <div class="flip-box">
                 <div class="flip-box-inner">
                     <div class="flip-box-front">
-                        <img src="images/sign_workshops.png" class="img_flip-box">
+                        <img src="images/sign_workshops_arrow.png" class="img_flip-box">
                     </div>
                     <div class="flip-box-back">
-                        <img src="images/sign_farm.png" class="img_flip-box">
+                        <img src="images/sign_farm_arrow.png" class="img_flip-box">
                     </div>
                 </div>
             </div>
@@ -76,11 +75,10 @@
     </div>
     <!--END HEADER-->
 
-    <div id="footer">
-        <a id="moveSectionDown" href="#">
-            <div class="arrow"></div>
-        </a>
-    </div>
+    <!-- <div id="footer">
+        <a id="moveSectionDown" href="#"><div class="arrow"></div></a>
+    </div> -->
+
     <!--END FOOTER-->
 
 
@@ -89,11 +87,15 @@
         <div class="section" id="section0">
             <div class="container">
 
-                <div class="top-header-right" style="margin-top: -1.7vh;">
+                <div class="top-border">
+                    <h1 style="font-size: 3vh; color: #eeeeee;">Our Workshops and Events</h1>
+                </div>
+
+                <div class="top-header-right">
                     <h3><a href="/">Hallowed Hill Farm</a> - Picture Example</h3>
                 </div>
 
-                <div class="workshops-left" style="margin-top: -8vh">
+                <div class="workshops-left">
                     <center>
                         <div class="cardContainer inactive">
                             <div class="card">
@@ -170,7 +172,7 @@
                 <div class="picture-right">
                     <img src="images/fm_farming.jpg" alt="Right" class="center">
                 </div>
-                <div class="text-left">
+                <div class="workshops-text-left">
                     <h1>Learn Ancient Skills</h1>
                     <a href="/">
                         <br>
@@ -206,12 +208,15 @@
         <div class="section" id="section1">
             <div class="container">
 
+                <div class="top-border">
+                    <h1 style="font-size: 3vh; color: #eeeeee;">Our Workshops and Events</h1>
+                </div>
 
-                <div class="top-header-right" style="margin-top: -1.5vh;">
+                <div class="top-header-right">
                     <h3><a href="/">Hallowed Hill Farm</a> - Picture Example</h3>
                 </div>
 
-                <div class="workshops-left" style="margin-top: -8vh">
+                <div class="workshops-left">
                     <center>
                         <div class="cardContainer inactive">
                             <div class="card">
@@ -288,7 +293,7 @@
                 <div class="picture-right">
                     <img src="images/ws_beekeeping2.jpg" alt="Right" class="center">
                 </div>
-                <div class="text-left">
+                <div class="workshops-text-left">
                     <h1>Learn cooking & farming techniques</h1>
                     <a href="/">
                         <br>
@@ -324,11 +329,17 @@
         <div class="section" id="section2">
             <div class="container">
 
+                <div class="top-border">
+                    <h1 style="font-size: 3vh; color: #eeeeee;">Calendar and Contact</h1>
+                </div>
+
                 <div class="top-header-left">
-                    <h1 style="font-size: 2.5vh; margin-top: 10px; margin-left: 10px; text-align: center;">Choose a date for workshop info</h1><br>
+                    <h1 style="font-size: 2.5vh; margin-left: 10px; text-align: center;">Choose a date
+                        for workshop info</h1><br>
                 </div>
                 <div class="top-header-right">
-                    <h1 style="font-size: 2.5vh; margin-top: 10px; margin-left: 10px; text-align: center;">Contact us to sign up</h1><br>
+                    <h1 style="font-size: 2.5vh; margin-left: 10px; text-align: center;">Contact us to
+                        sign up</h1><br>
                 </div>
 
                 <div class="picture-left">
@@ -450,10 +461,11 @@
                     </h1>
                     <br>
                     <p style="font-size: 1.7vh; margin-top: 10px; margin-left: 10px;">
-                        Let us know which class(es) you are interested in signing up for with us. <br>We all look forward to
+                        Let us know which class(es) you are interested in signing up for with us. <br>We all look
+                        forward to
                         seeing you at our family friendly and unique workshops!
                         <br><br><i>Please submit any questions or concerns you have about our workshops
-                        and we will get back to you as soon as possible!</i>
+                            and we will get back to you as soon as possible!</i>
                     </p><br>
 
                 </div>
@@ -475,7 +487,7 @@
             anchors: ['page1', 'page2', 'page3'],
             menu: '#menu',
             navigation: true,
-            continuousVertical: true,
+            // continuousVertical: true,
         });
 
         document.querySelector('#moveSectionDown').addEventListener('click', function (e) {

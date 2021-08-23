@@ -17,9 +17,10 @@ $(document).ready(function () {
   $(".menuItem").hover(function () {
     var pos = $(this).attr("alt");
     $("#slider").stop().animate({
-      marginLeft: 300 * (pos - 1),
+      marginLeft: 15 * (pos - 1) + "vw",
     }, 300)
 
   });
 
 })
+

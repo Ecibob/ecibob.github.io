@@ -1,5 +1,4 @@
 // SCSS Variables
-
 $text-arrow-space: 16px;
 $shaft-width: 1px;
 $newshaft-width: 64px;
@@ -21,15 +20,18 @@ $gray: #808080;
   font-size: 1.6vh;
   text-decoration: none;
   box-sizing: border-box;
+  color: #444125;
 }
 
-ul {list-style-type: none;}
+ul {
+  list-style-type: none;
+}
 
 a,
 a:hover,
 a:visited,
 a:active {
-  color: #F56A31;
+  color: #943d24;
 }
 
 h1 {
@@ -38,7 +40,7 @@ h1 {
   font-weight: 600;
   font-size: 4vh;
   margin-bottom: -1vh;
-  text-transform:uppercase;
+  text-transform: uppercase;
 }
 
 h2 {
@@ -62,7 +64,7 @@ h3 {
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 0.15fr 0.5fr 3.25fr 1.6fr;
+  grid-template-rows: 0.15fr auto 25vw 1.6fr;
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas: "top-border top-border""top-header-left top-header-right""picture-left picture-right""text-left text-right";
@@ -71,12 +73,11 @@ h3 {
 
 .top-border {
   grid-area: top-border;
-  background-color: black;
-  font-size: larger;
-  color: white;
+  background-color: #444125;
   text-align: center;
-  padding-top: 1vh;
-  padding-bottom: 1vh;
+  padding: 10px;
+  width: 60%;
+  margin-left: 20vw;
 }
 
 .top-header-left {
@@ -108,7 +109,7 @@ h3 {
   background-color: #eeeeee;
   margin-bottom: -20vh;
   padding-bottom: 5vh;
-  margin-top: -2vh;
+  margin-top: -7.9vh;
 }
 
 .picture-right {
@@ -128,6 +129,14 @@ h3 {
 }
 
 .text-left {
+  grid-area: text-left;
+  background-color: white;
+  padding-top: 3vh;
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+
+.workshops-text-left {
   grid-area: text-left;
   background-color: white;
   padding-top: 3vh;
@@ -155,66 +164,58 @@ h3 {
 .trans-horse {
   z-index: 100;
   position: fixed;
-  bottom: -105px;
+  bottom: -125px;
   right: 0px;
-  max-width: 31.25%;
-  max-height: 31.25%;
 }
 
 
 /* Centered texts in each section
 * --------------------------------------- */
-.section{
-
-}
+// .section {}
 
 /* Backgrounds will cover all the section
 * --------------------------------------- */
 #section0,
 #section1,
 #section2,
-#section3{
-    background-size: cover;
-    background-attachment: fixed;
+#section3 {
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 /* Defining each section background and styles
 * --------------------------------------- */
-#section0{
+// #section0 {}
 
-}
-#section0 h1{
+// #section0 h1 {}
 
-}
-#section2{
+// #section2 {}
 
-}
-#section3{
+// #section3 {}
 
-}
-#section3 h1{
-
-}
+// #section3 h1 {}
 
 /* Fixed header and footer.
 * --------------------------------------- */
-#header, #footer{
-    position:fixed;
-    height: 10vh;
-    display:block;
-    width: 100%;
-    background: transparent;
-    z-index:9;
-    text-align:center;
-    color: #f2f2f2;
-    padding: 10px 0 0 0;
+#header,
+#footer {
+  position: fixed;
+  height: 10vh;
+  display: block;
+  width: 100%;
+  background: transparent;
+  text-align: center;
+  color: #f2f2f2;
+  padding: 10px 0 0 0;
 }
 
-#header{
-    top:0px;
+#header {
+  top: 0px;
+  z-index: 2;
 }
-#footer{
-    bottom:0px;
+
+#footer {
+  bottom: 0px;
 }
 
 // ANIMATED ARROW BUTTON
@@ -306,7 +307,6 @@ h3 {
 
 .animated-arrow {
   display: inline-block;
-  color: $black !important;
   font-size: 1.2em;
   font-style: italic;
   text-decoration: none;
@@ -439,44 +439,53 @@ div.arrow {
 
 // TOP NAVIGATION BAR
 
-#bar{ 
-  position:absolute;
-   left:50%;
-   top: 0vh;
-   z-index: -1;
-   transform: translate(-50%, -50%); /*CENTER*/
+#bar {
+  position: absolute;
+  z-index: 1;
+  left: 25%; //centered
+  width: 100%;
+  top: 100px;
 }
 
-.menuItem{
-  position:relative;
-  min-width:300px;
-  height:40px;
-  text-transform:uppercase;
-  font-size:1.8vh;
-  padding-top:12px;
-  padding-bottom:2px;
-  background-color:#d8d8d8;
-  float:left;
-  text-align:center;
+.menuItem {
+  position: relative;
+  min-width: 15vw;
+  height: 50px;
+  text-transform: uppercase;
+  font-size: 1.8vh;
+  padding-top: 12px;
+  padding-bottom: 2px;
+  background-color: #d8d8d8;
+  float: left;
+  text-align: center;
   font-family: 'Abhaya Libre', sans-serif;
-  cursor:pointer;
+  cursor: pointer;
 }
 
 .menuItem a {
-  text-transform:uppercase;
-  font-size:1.8vh;
-  color:black;
-  text-align:center;
+  text-transform: uppercase;
+  font-size: 1.8vh;
+  color: black;
+  text-align: center;
   font-family: 'Abhaya Libre', sans-serif;
 }
 
-#slider{
-  background-color:black;
-  height:5px;
-  max-width:300px;
-  opacity:.8;
-  margin-left:0px;
-  border-radius:1px;
+#slider {
+  background-color: black;
+  height: 5px;
+  max-width: 15vw;
+  opacity: .8;
+  margin-left: 0px;
+  border-radius: 1px;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
 }
 
 // WORKSHOPS CONTENT
@@ -488,15 +497,33 @@ div.arrow {
   display: inline-block;
   width: 300px;
   height: 400px;
-  min-width: 300px;
-  min-height: 400px;
-  margin: 4px;
+  // min-width: 300px;
+  // min-height: 400px;
+  margin: 2vw;
   perspective: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+  .cardContainer {
+    transform: scale(0.7, .7);
+    width: 350px;
+    height: 300px;
+    margin-bottom: 4vw;
+  }
+
+  .workshops-left {
+    margin-bottom: auto;
+  }
+
+  .workshops-text-left {
+    visibility: hidden;
+  }
 }
 
 .activeFlip {
   transform: translateZ(0px) rotateY(180deg) !important;
 }
+
 .activeFlip:after {
   display: none;
 }
@@ -506,7 +533,7 @@ div.arrow {
   width: 100%;
   height: 100%;
   cursor: pointer;
-  -moz-backface-visibility: hidden;
+  // -moz-backface-visibility: hidden;
   transform-style: preserve-3d;
   transform: translateZ(-100px);
   transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -514,6 +541,7 @@ div.arrow {
   margin: auto;
   text-align: center;
 }
+
 .card:after {
   content: "";
   position: absolute;
@@ -525,12 +553,15 @@ div.arrow {
   transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1.4);
 
 }
+
 .card:hover {
   transform: translateZ(0px);
 }
+
 .card:hover:after {
   opacity: 1;
 }
+
 .card .side {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
@@ -540,15 +571,18 @@ div.arrow {
   border-radius: 5px;
   background-color: white;
 }
+
 .card .front {
   z-index: 2;
 }
+
 .card .back {
   transform: rotateY(180deg);
   text-align: left;
   height: inherit;
   // height:fit-content;
 }
+
 .card .info {
   padding: 16px;
 }
@@ -561,15 +595,19 @@ div.arrow {
   width: 100%;
   height: 250px;
 }
+
 .front .img1 {
   background-image: url(images/ws_blacksmithing.jpg);
 }
+
 .front .img2 {
   background-image: url(images/ws_weaving.jpg);
 }
+
 .front .img3 {
   background-image: url(images/ws_beekeeping.jpg);
 }
+
 .front .img4 {
   background-image: url(images/ws_canning.jpg);
 }
@@ -577,14 +615,17 @@ div.arrow {
 .back {
   position: relative;
 }
+
 .back h2 {
   margin-top: 6px;
   margin-bottom: 18px;
 }
+
 .back li {
   line-height: 22px;
   margin: 2px 0 6px 0;
 }
+
 .back .btn {
   position: absolute;
   bottom: 16px;
@@ -598,17 +639,21 @@ div.arrow {
   border-radius: 5px;
   cursor: pointer;
 }
+
 .back .btn:hover h4 {
   transform: translateX(0px);
 }
+
 .back .btn:hover svg {
   transform: translateX(0px);
   opacity: 1;
 }
+
 .back .btn h4 {
   transform: translateX(12px);
   transition: transform 0.3s ease-out;
 }
+
 .back .btn svg {
   margin: 1px 0 0 4px;
   transform: translateX(-8px);
@@ -626,7 +671,7 @@ div.arrow {
   outline: 0;
   padding: 12px;
   color: white;
-  background-color: #000;
+  background-color: #444125;
   text-align: center;
   cursor: pointer;
   width: 100%;
@@ -676,7 +721,7 @@ div.arrow {
 .weekdays {
   margin: 0;
   padding: 15px 0;
-  background-color:#ddd;
+  background-color: #ddd;
 }
 
 .weekdays li {
@@ -699,7 +744,7 @@ div.arrow {
   width: 13.6%;
   text-align: center;
   margin-bottom: 15px;
-  font-size:18px;
+  font-size: 18px;
   color: #777;
 }
 
@@ -712,21 +757,38 @@ div.arrow {
 
 /* Add media queries for smaller screens */
 @media screen and (max-width:720px) {
-  .weekdays li, .days li {width: 13.1%;}
+
+  .weekdays li,
+  .days li {
+    width: 13.1%;
+  }
 }
 
 @media screen and (max-width: 420px) {
-  .weekdays li, .days li {width: 12.5%;}
-  .days li .active {padding: 2px;}
+
+  .weekdays li,
+  .days li {
+    width: 12.5%;
+  }
+
+  .days li .active {
+    padding: 2px;
+  }
 }
 
 @media screen and (max-width: 290px) {
-  .weekdays li, .days li {width: 12.2%;}
+
+  .weekdays li,
+  .days li {
+    width: 12.2%;
+  }
 }
 
 // RESPONSIVE CONTACT FORM
 
-input[type=text], select, textarea {
+input[type=text],
+select,
+textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -780,8 +842,86 @@ input[type=submit]:hover {
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
-  .col-25, .col-75, input[type=submit] {
+
+  .col-25,
+  .col-75,
+  input[type=submit] {
     width: 100%;
     margin-top: 0;
   }
 }
+
+// FADE-IN ANIMATIONS
+
+#test {
+  -webkit-animation: fadein 2s;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 2s;
+  /* Firefox < 16 */
+  -ms-animation: fadein 2s;
+  /* Internet Explorer */
+  -o-animation: fadein 2s;
+  /* Opera < 12.1 */
+  animation: fadein 2s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+// FADE-IN COMPLETE PAGE
+// body{ 
+//   opacity: 0;
+//   transition: opacity 2s;
+//   -webkit-transition: opacity 2s; /* Safari */
+// }
