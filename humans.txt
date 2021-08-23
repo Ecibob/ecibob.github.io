@@ -1,0 +1,10 @@
+/* TEAM */
+	Designer: Keith Becker
+	Contact: keithariebecker [at] gmail.com
+	From: Memphis, Tennessee, USA
+
+/* SITE */
+	Last update: 08/2021
+	Language: English
+	Doctype: HTML5
+	IDE: Visual Studio Code
