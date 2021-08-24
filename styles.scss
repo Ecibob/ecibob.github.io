@@ -43,6 +43,21 @@ h1 {
   text-transform: uppercase;
 }
 
+h1.topheader {
+  font-size: 3vh;
+  color: #eee;
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 2.5vh;
+  }
+
+  h1.topheader {
+    font-size: 2vh;
+  }
+}
+
 h2 {
   font-style: normal;
   color: inherit;
@@ -165,7 +180,8 @@ h3 {
   z-index: 100;
   position: fixed;
   bottom: -125px;
-  right: 0px;
+  right: -80px;
+  transform: scale(75%);
 }
 
 
@@ -200,7 +216,7 @@ h3 {
 #header,
 #footer {
   position: fixed;
-  height: 10vh;
+  height: 10%;
   display: block;
   width: 100%;
   background: transparent;
@@ -493,13 +509,12 @@ div.arrow {
 // FLIP BOX WORKSHOP CARDS
 
 .cardContainer {
+  top: 25px;
   position: relative;
   display: inline-block;
-  width: 300px;
-  height: 400px;
+  width: 350px;
   // min-width: 300px;
   // min-height: 400px;
-  margin: 2vw;
   perspective: 1000px;
 }
 
@@ -551,7 +566,6 @@ div.arrow {
   border-radius: 5px;
   opacity: 0;
   transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1.4);
-
 }
 
 .card:hover {
