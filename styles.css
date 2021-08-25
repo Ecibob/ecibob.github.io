@@ -237,7 +237,7 @@ h3 {
 
 @media screen and (max-width: 700px) {
   .trans-horse {
-    z-index: 100;
+    z-index: -2;
     position: fixed;
     bottom: -145px;
     right: -80px;
@@ -249,6 +249,17 @@ h3 {
   }
   .picture-left {
     background-color: #eeeeee;
+  }
+}
+
+@media screen and (max-height: 900px) {
+  .trans-horse {
+    z-index: -2;
+    position: fixed;
+    bottom: -185px;
+    right: -80px;
+    -webkit-transform: scale(40%);
+            transform: scale(40%);
   }
 }
 
