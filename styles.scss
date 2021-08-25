@@ -119,7 +119,9 @@ h3 {
   text-align: center;
   padding: 10px;
   width: 60%;
-  margin-left: 20vw;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
 }
 
 .top-header-left {
@@ -215,9 +217,9 @@ h3 {
   .trans-horse {
     z-index: 100;
     position: fixed;
-    bottom: -125px;
+    bottom: -145px;
     right: -80px;
-    transform: scale(75%);
+    transform: scale(60%);
   }
   .top-header-left {
     background-color: #eeeeee;
