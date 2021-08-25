@@ -237,29 +237,13 @@ h3 {
 
 @media screen and (max-width: 700px) {
   .trans-horse {
-    z-index: -2;
-    position: fixed;
-    bottom: -145px;
-    right: -80px;
-    -webkit-transform: scale(60%);
-            transform: scale(60%);
+    display: none;
   }
   .top-header-left {
     background-color: #eeeeee;
   }
   .picture-left {
     background-color: #eeeeee;
-  }
-}
-
-@media screen and (max-height: 900px) {
-  .trans-horse {
-    z-index: -2;
-    position: fixed;
-    bottom: -185px;
-    right: -80px;
-    -webkit-transform: scale(40%);
-            transform: scale(40%);
   }
 }
 
