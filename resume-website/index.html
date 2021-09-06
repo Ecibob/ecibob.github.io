@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Engineering Resume and Portfolio - Keith Becker</title>
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+	<link href="font-awesome/css/all.css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&
+		family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+		rel="stylesheet">
+	<link rel='stylesheet' href='styles.css'>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+</head>
+
+<body>
+	<div class="container-gears">
+		<div class="gear1"></div>
+		<div class="gear2"></div>
+		<div class="gear3"></div>
+		<div class="gear4"></div>
+	</div>
+
+	<canvas id="bg"></canvas>
+
+	<header>
+		<div class="menu">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#head">About Me</a></li>
+				<li><a href="#resume">Resume</a></li>
+				<li><a href="#portfolio">Projects & Interests</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</div>
+		<div class="toggle">
+			<img src="images/toggle.png" alt="">
+		</div>
+	</header>
+	<!--HEADER NAVIGATION END-->
+
+	<div class="content">
+		<!-- <h1 style="color:#fff">Keith A. Becker</h1><br> -->
+		<img src="images/title_name.png"><br><br>
+		<p style="color:#fff">Hi there! I'm an engineer with special interests in <b style="color:#fff">Embedded
+				Systems</b>, <b>Software Development</b> and <b style="color:#fff">Unmanned Aerial
+				Vehicles</b> for conservation and research,
+			who studied <b style="color:#fff">Mechanical Engineering</b> at <b style="color:#fff">Vanderbilt
+				University.</b> </p>
+	</div>
+	<!--TITLE CONTENT END-->
+
+	<!-- <figure class="text-center">
+		<blockquote class="blockquote">
+			<p>"That's the show. It's like 5 minutes of science and then 10 minutes of me hurting myself."</p>
+		</blockquote>
+		<figcaption class="blockquote-footer text-white">
+			Adam Savage on <cite title="Source Title">Mythbusters</cite>
+		</figcaption>
+	</figure> -->
+
+	<div class="container">
+		<div class="wrapper mt-lg-5">
+			<div class="sidebar-wrapper m-3">
+				<div class="profile-container">
+					<img class="profile" src="images/profilepic-round.png" alt="" />
+				</div>
+				<div>
+					<a href="/docs/keithariebecker_resume.pdf" target="_blank" class="btn-primary">Download PDF</a>
+				</div>
+				<div class="contact-container container-block ">
+					<ul class="list-unstyled contact-list">
+						<li class="email"><i class="fas fa-envelope"></i><a
+								href="mailto: keithariebecker@gmail.com">keithariebecker@gmail.com</a></li>
+						<li class="email"><i class="fas fa-envelope"></i><a
+								href="mailto: keith.a.becker@vanderbilt.edu">keith.a.becker@vanderbilt.edu</a></li>
+						<li class="phone"><i class="fas fa-phone"></i><a href="tel:19013564367">901-356-4367</a></li>
+						<li class="linkedin"><i class="fab fa-linkedin-in"></i><a
+								href="https://www.linkedin.com/in/keithariebecker/"
+								target="_blank">in/keithariebecker/</a></li>
+					</ul>
+				</div>
+				<div class="interests-container container-block">
+					<h2 class="container-block-title">Technical Skills</h2>
+					<ul class="list-unstyled interests-list">
+						<li>Mechanical Design</li>
+						<li>Circuit Design</li>
+						<li>Hardware/Software Programming</li>
+						<li>CAD and Simulation</li>
+						<li>Manufacturing Design</li>
+					</ul>
+				</div>
+			</div>
+			<!--SIDE BAR WRAPPER END-->
+
+			<div class="main-wrapper border">
+				<section class="section summary-section">
+					<h2 class="section-title bg-transparent text-white" id="head"><i class="fas fa-user"></i>About Me
+					</h2>
+					<div class="summary">
+						<p>Welcome to my website! I am a professional engineer that has worked with aeronautical PLC and
+							pneumatic equipment, digital electronics and microcontrollers,
+							PCB design, CAD, software and hardware programming, manufacturing and machining design, as
+							well as web development.
+							I have experience designing products from concept to
+							industrialisation, full life-cycle design and project management.
+						</p>
+						<p>I completed my Bachelor's degree from Vanderbilt in 2012. I took leadership roles such as a
+							<a href="https://www.firstinspires.org/" target="_blank">
+								<i class="m-0">FIRST Robotics</i></a> instructor, and was awarded 1st place for my
+							senior design thesis.
+						</p>
+						<p>Personally, I am a lover of engineering and science, and spend my free time on side projects,
+							learning new skills, and getting into new hobbies.
+							From the depths of marine science and diving, to the skies offered by being a private pilot,
+							I am interested in the
+							wide range of what the
+							world has to offer!
+						</p>
+						<p>This website serves as an accessible CV and provides an overview of some of my professional
+							and personal projects and interests.
+						</p>
+					</div>
+				</section>
+				<!--ABOUT ME END-->
+
+				<section class="section experiences-section">
+					<h2 class="section-title bg-transparent text-white" id="resume"><i
+							class="fas fa-briefcase"></i>Education</h2>
+					<div class="item">
+						<div class="meta">
+							<div class="upper-row">
+								<h3 class="job-title">Vanderbilt University - Nashville, TN</h3>
+								<div class="time">2008 - 2012</div>
+							</div>
+							<div class="company">Mechanical Engineering</div>
+						</div>
+						<div class="details">
+							<p class="m-0">FIRST Robotics Instructor</p>
+							<p>Thesis: <a href="/docs/ABiomimeticWingActuationMechanism.pdf" target="_blank"><i>“A
+										Biomimetic Wing-Actuation Mechanism for Micro Aerial
+										Vehicles.”</i></a>
+								<br>- 1st place at 2011 IMAV (International Micro-Aerial Vehicle) contest
+							</p>
+						</div>
+					</div>
+				</section>
+				<!--EDUCATION END-->
+
+				<section class="section experiences-section">
+					<h2 class="section-title"><i class="fas fa-briefcase"></i>Work Experience</h2>
+					<div class="item">
+						<div class="meta">
+							<div class="upper-row">
+								<h3 class="job-title">Owner, Independent Contractor</h3>
+								<div class="time">2015 - Present</div>
+							</div>
+							<div class="company">Memphis, TN</div>
+						</div>
+						<div class="details">
+							<p>Began a freelance business where I continue to provide electrical engineering design for
+								customers worldwide. Many of the projects
+								include PCB and hardware design, CAD prototype design, IoT devices, automation
+								equipment, and website development.
+								I have also used this opportunity to work on UAV
+								systems design.
+							</p>
+						</div>
+					</div>
+					<div class="item">
+						<div class="meta">
+							<div class="upper-row">
+								<h3 class="job-title">Design Office Project Manager</h3>
+								<div class="time">2011 - 2014</div>
+							</div>
+							<div class="company"><a href="https://aerowing.com"
+									target="_blank"><i>Aerowing</i></a>Nashville, TN</div>
+						</div>
+						<div class="details">
+							<p>As an intern and post-graduation, I worked at an aerospace maintenance, repair, and
+								operations company providing fuel tank leak detection and repair support to both U.S.
+								military operations and commercial aircraft manufacturers. I was responsible for project
+								planning and
+								manufacturing design of pneumatic, PLC-driven equipment. </p>
+						</div>
+					</div>
+					<div class="item">
+						<div class="meta">
+							<div class="upper-row">
+								<h3 class="job-title">Application Engineer</h3>
+								<div class="time">2018 - 2019</div>
+							</div>
+							<div class="company"><a href="https://coilmastercorp.com"
+									target="_blank"><i>Coilmaster</i></a> Memphis, TN</div>
+						</div>
+						<div class="details">
+							<p>An international provider of HVAC heat exchanger units and psychrometric testing for a
+								variety of
+								commercial and industrial customers. I worked on the manufacturing and building
+								infrastructure integration processes
+								based on customers' specifications.</p>
+
+						</div>
+					</div>
+				</section>
+				<!--WORK EXPERIENCE END-->
+			</div>
+			<!--SECTION WRAPPER END-->
+
+			<div class="wrapper mt-lg-6">
+				<div class="main-wrapper-projects border">
+					<section class="section summary-section">
+						<h2 class="section-title bg-transparent text-white" id="portfolio"><i
+								class="fas fa-user"></i>Project Experience</h2>
+						<div class="summary">
+							<p>Take a look at some examples of my professional and personal projects from the past.</p>
+						</div>
+						<!--BEGIN PROJECT EXAMPLES-->
+						<div class="card mb-5 bg-transparent border-0" style="max-width: auto;">
+							<div class="row g-0">
+								<div class="col-md-4">
+									<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+										<div class="carousel-indicators">
+											<button type="button" data-bs-target="#carouselExampleIndicators"
+												data-bs-slide-to="0" class="active" aria-current="true"
+												aria-label="Slide 1"></button>
+											<button type="button" data-bs-target="#carouselExampleIndicators"
+												data-bs-slide-to="1" aria-label="Slide 2"></button>
+										</div>
+										<div class="carousel-inner">
+											<div class="carousel-item active">
+												<img src="/images/portfolio/thesis1.png" class="d-block w-100"
+													alt="...">
+											</div>
+											<div class="carousel-item">
+												<img src="/images/portfolio/thesis2.png" class="d-block w-100"
+													alt="...">
+											</div>
+										</div>
+										<button class="carousel-control-prev" type="button"
+											data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+											<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+											<span class="visually-hidden">Previous</span>
+										</button>
+										<button class="carousel-control-next" type="button"
+											data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+											<span class="carousel-control-next-icon" aria-hidden="true"></span>
+											<span class="visually-hidden">Next</span>
+										</button>
+									</div>
+								</div>
+								<div class="col-md-8 p-0 ps-lg-5">
+									<div class="card-body bg-dark">
+										<h5 class="card-title">Vanderbilt Senior Design</h5>
+										<p class="card-text"><small class="text-muted"><a
+													href="/docs/ABiomimeticWingActuationMechanism.pdf"
+													target="_blank"><i>“A
+														Biomimetic Wing-Actuation Mechanism for Micro Aerial
+														Vehicles.”</i></a></small></p>
+										<p class="card-text">This is a wider card with supporting text below as a
+											natural lead-in to additional content. This content is a little bit longer.
+											This is a wider card with supporting text below as a
+											natural lead-in to additional content. This content is a little bit longer.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- EXAMPLE 1 -->
+						<div class="card mb-5 bg-transparent border-0" style="max-width: auto;">
+							<div class="row g-0">
+								<div class="col-md-4">
+									<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+										<div class="carousel-indicators">
+											<button type="button" data-bs-target="#carouselExampleIndicators"
+												data-bs-slide-to="0" class="active" aria-current="true"
+												aria-label="Slide 1"></button>
+											<button type="button" data-bs-target="#carouselExampleIndicators"
+												data-bs-slide-to="1" aria-label="Slide 2"></button>
+											<button type="button" data-bs-target="#carouselExampleIndicators"
+												data-bs-slide-to="1" aria-label="Slide 3"></button>
+										</div>
+										<div class="carousel-inner">
+											<div class="carousel-item active">
+												<img src="/images/portfolio/aerowing1.png" class="d-block w-100"
+													alt="...">
+											</div>
+											<div class="carousel-item">
+												<img src="/images/portfolio/aerowing5.png" class="d-block w-100"
+													alt="...">
+											</div>
+											<div class="carousel-item">
+												<img src="/images/portfolio/aerowing3.png" class="d-block w-100"
+													alt="...">
+											</div>
+										</div>
+										<button class="carousel-control-prev" type="button"
+											data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+											<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+											<span class="visually-hidden">Previous</span>
+										</button>
+										<button class="carousel-control-next" type="button"
+											data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+											<span class="carousel-control-next-icon" aria-hidden="true"></span>
+											<span class="visually-hidden">Next</span>
+										</button>
+									</div>
+								</div>
+								<div class="col-md-8 p-0 ps-lg-5">
+									<div class="card-body bg-dark">
+										<h5 class="card-title">Leak Detection System</h5>
+										<p class="card-text">This is a wider card with supporting text below as a
+											natural lead-in to additional content. This content is a little bit longer.
+											This is a wider card with supporting text below as a
+											natural lead-in to additional content. This content is a little bit longer.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- EXAMPLE 2 -->
+						<div class="card mb-5 bg-transparent border-0" style="max-width: auto;">
+							<div class="row g-0">
+								<div class="col-md-4">
+									<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+										<div class="carousel-indicators">
+											<button type="button" data-bs-target="#carouselExampleIndicators"
+												data-bs-slide-to="0" class="active" aria-current="true"
+												aria-label="Slide 1"></button>
+											<button type="button" data-bs-target="#carouselExampleIndicators"
+												data-bs-slide-to="1" aria-label="Slide 2"></button>
+										</div>
+										<div class="carousel-inner">
+											<div class="carousel-item active">
+												<img src="/images/portfolio/aerowing4.png" class="d-block w-100"
+													alt="...">
+											</div>
+											<div class="carousel-item">
+												<img src="/images/portfolio/aerowing2.png" class="d-block w-100"
+													alt="...">
+											</div>
+										</div>
+										<button class="carousel-control-prev" type="button"
+											data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+											<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+											<span class="visually-hidden">Previous</span>
+										</button>
+										<button class="carousel-control-next" type="button"
+											data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+											<span class="carousel-control-next-icon" aria-hidden="true"></span>
+											<span class="visually-hidden">Next</span>
+										</button>
+									</div>
+								</div>
+								<div class="col-md-8 p-0 ps-lg-5">
+									<div class="card-body bg-dark">
+										<h5 class="card-title">Helium Sniffer</h5>
+										<p class="card-text">This is a wider card with supporting text below as a
+											natural lead-in to additional content. This content is a little bit longer.
+											This is a wider card with supporting text below as a
+											natural lead-in to additional content. This content is a little bit longer.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- EXAMPLE 3 -->
+						<div class="card mb-5 bg-transparent border-0" style="max-width: auto;">
+							<div class="row g-0">
+								<div class="col-md-4">
+									<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+										<div class="carousel-indicators">
+											<button type="button" data-bs-target="#carouselExampleIndicators"
+												data-bs-slide-to="0" class="active" aria-current="true"
+												aria-label="Slide 1"></button>
+											<button type="button" data-bs-target="#carouselExampleIndicators"
+												data-bs-slide-to="1" aria-label="Slide 2"></button>
+										</div>
+										<div class="carousel-inner">
+											<div class="carousel-item active">
+												<img src="/images/portfolio/grinder1.png" class="d-block w-100"
+													alt="...">
+											</div>
+											<div class="carousel-item">
+												<img src="/images/portfolio/pcb3.png" class="d-block w-100" alt="...">
+											</div>
+										</div>
+										<button class="carousel-control-prev" type="button"
+											data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+											<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+											<span class="visually-hidden">Previous</span>
+										</button>
+										<button class="carousel-control-next" type="button"
+											data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+											<span class="carousel-control-next-icon" aria-hidden="true"></span>
+											<span class="visually-hidden">Next</span>
+										</button>
+									</div>
+								</div>
+								<div class="col-md-8 p-0 ps-lg-5">
+									<div class="card-body bg-dark">
+										<h5 class="card-title">Industrial Coffee Grinder</h5>
+										<p class="card-text">This is a wider card with supporting text below as a
+											natural lead-in to additional content. This content is a little bit longer.
+											This is a wider card with supporting text below as a
+											natural lead-in to additional content. This content is a little bit longer.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- EXAMPLE 7 -->
+						<div class="card mb-5 bg-transparent border-0" style="max-width: auto;">
+							<div class="row g-0">
+								<div class="col-md-4">
+									<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+										<div class="carousel-indicators">
+											<button type="button" data-bs-target="#carouselExampleIndicators"
+												data-bs-slide-to="0" class="active" aria-current="true"
+												aria-label="Slide 1"></button>
+											<button type="button" data-bs-target="#carouselExampleIndicators"
+												data-bs-slide-to="1" aria-label="Slide 2"></button>
+											<button type="button" data-bs-target="#carouselExampleIndicators"
+												data-bs-slide-to="1" aria-label="Slide 3"></button>
+										</div>
+										<div class="carousel-inner">
+											<div class="carousel-item active">
+												<img src="/images/portfolio/hex1.png" class="d-block w-100" alt="...">
+											</div>
+											<div class="carousel-item">
+												<img src="/images/portfolio/quad1.png" class="d-block w-100" alt="...">
+											</div>
+											<div class="carousel-item">
+												<img src="/images/portfolio/quad3.png" class="d-block w-100" alt="...">
+											</div>
+										</div>
+										<button class="carousel-control-prev" type="button"
+											data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+											<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+											<span class="visually-hidden">Previous</span>
+										</button>
+										<button class="carousel-control-next" type="button"
+											data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+											<span class="carousel-control-next-icon" aria-hidden="true"></span>
+											<span class="visually-hidden">Next</span>
+										</button>
+									</div>
+								</div>
+								<div class="col-md-8 p-0 ps-lg-5">
+									<div class="card-body bg-dark">
+										<h5 class="card-title">UAVs/Drones</h5>
+										<p class="card-text">This is a wider card with supporting text below as a
+											natural lead-in to additional content. This content is a little bit longer.
+											This is a wider card with supporting text below as a
+											natural lead-in to additional content. This content is a little bit longer.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- EXAMPLE 2 -->
+						<div class="card mb-5 bg-transparent border-0" style="max-width: auto;">
+							<div class="row g-0">
+								<div class="col-md-4">
+									<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+										<div class="carousel-indicators">
+											<button type="button" data-bs-target="#carouselExampleIndicators"
+												data-bs-slide-to="0" class="active" aria-current="true"
+												aria-label="Slide 1"></button>
+											<button type="button" data-bs-target="#carouselExampleIndicators"
+												data-bs-slide-to="1" aria-label="Slide 2"></button>
+										</div>
+										<div class="carousel-inner">
+											<div class="carousel-item active">
+												<img src="/images/portfolio/cad_dash80.png" class="d-block w-100"
+													alt="...">
+											</div>
+											<div class="carousel-item">
+												<img src="/images/portfolio/quad2.png" class="d-block w-100" alt="...">
+											</div>
+										</div>
+										<button class="carousel-control-prev" type="button"
+											data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+											<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+											<span class="visually-hidden">Previous</span>
+										</button>
+										<button class="carousel-control-next" type="button"
+											data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+											<span class="carousel-control-next-icon" aria-hidden="true"></span>
+											<span class="visually-hidden">Next</span>
+										</button>
+									</div>
+								</div>
+								<div class="col-md-8 p-0 ps-lg-5">
+									<div class="card-body bg-dark">
+										<h5 class="card-title">CAD Design</h5>
+										<p class="card-text">This is a wider card with supporting text below as a
+											natural lead-in to additional content. This content is a little bit longer.
+											This is a wider card with supporting text below as a
+											natural lead-in to additional content. This content is a little bit longer.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- EXAMPLE 7 -->
+						<div class="card mb-5 bg-transparent border-0" style="max-width: auto;">
+							<div class="row g-0">
+								<div class="col-md-4">
+									<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+										<div class="carousel-indicators">
+											<button type="button" data-bs-target="#carouselExampleIndicators"
+												data-bs-slide-to="0" class="active" aria-current="true"
+												aria-label="Slide 1"></button>
+											<button type="button" data-bs-target="#carouselExampleIndicators"
+												data-bs-slide-to="1" aria-label="Slide 2"></button>
+										</div>
+										<div class="carousel-inner">
+											<div class="carousel-item active">
+												<img src="/images/portfolio/aqua2.png" class="d-block w-100" alt="...">
+											</div>
+											<div class="carousel-item">
+												<img src="/images/portfolio/reef1.png" class="d-block w-100" alt="...">
+											</div>
+										</div>
+										<button class="carousel-control-prev" type="button"
+											data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+											<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+											<span class="visually-hidden">Previous</span>
+										</button>
+										<button class="carousel-control-next" type="button"
+											data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+											<span class="carousel-control-next-icon" aria-hidden="true"></span>
+											<span class="visually-hidden">Next</span>
+										</button>
+									</div>
+								</div>
+								<div class="col-md-8 p-0 ps-lg-5">
+									<div class="card-body bg-dark">
+										<h5 class="card-title">Reef Aquarium Controller</h5>
+										<p class="card-text">This is a wider card with supporting text below as a
+											natural lead-in to additional content. This content is a little bit longer.
+											This is a wider card with supporting text below as a
+											natural lead-in to additional content. This content is a little bit longer.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- EXAMPLE 7 -->
+					</section>
+					<!-- FREELANCE END -->
+				</div>
+			</div>
+			<!--PROJECTS/INTERESTS END-->
+
+			<div class="wrapper mt-lg-5">
+				<div class="main-wrapper border">
+					<section class="section summary-section mb-4">
+						<h2 class="section-title bg-transparent text-white" id="contact"><i
+								class="fas fa-paper-plane"></i>Contact Me</h2><br>
+						<div class="summary">
+							<p>The best way to contact me is my email: <a href="mailto: keithariebecker@gmail.com"
+									style="color: white; text-decoration: underline;">keithariebecker@gmail.com</a></p>
+						</div>
+					</section>
+				</div>
+			</div>
+			<!--CONTACT ME END-->
+		</div>
+		<!--MAIN WRAPPER END-->
+	</div>
+	<!--CONTAINER END-->
+
+	<!-- <div class="toggle-content">
+		<div class="toggle-content-inner">
+			<img src="https://images.pexels.com/photos/1056251/pexels-photo-1056251.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+				alt="">
+			<img src="https://images.pexels.com/photos/774731/pexels-photo-774731.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+				alt="">
+			<img src="https://images.pexels.com/photos/1543793/pexels-photo-1543793.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+				alt="">
+			<img src="https://images.pexels.com/photos/156934/pexels-photo-156934.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+				alt="">
+			<img src="https://images.pexels.com/photos/236606/pexels-photo-236606.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+				alt="">
+			<img src="https://images.pexels.com/photos/1323326/cat-pet-pussy-animal-1323326.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+				alt="">
+		</div>
+	</div> -->
+
+	<!--- SCRIPTS --->
+	<script src='javascript/scripts.js'></script>
+	<script src='javascript/three-min.js'></script>
+	<script src='javascript/SimplexNoise.js'></script>
+	<script src='javascript/threex.terrain.js'></script>
+	<script src="javascript/terrain-script.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
+	</script>
+	<!--- SCRIPTS --->
+</body>
+
+</html>
