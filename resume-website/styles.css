@@ -537,7 +537,7 @@ a:focus {
 }
 
 .container-gears .gear1 {
-  background: url('/images/gear_80.png') no-repeat;
+  background: url('images/gear_80.png') no-repeat;
   width: 80px;
   height: 80px;
   margin-left: 200px;
@@ -548,7 +548,7 @@ a:focus {
 }
 
 .container-gears .gear2 {
-  background: url('/images/gear_200.png') no-repeat;
+  background: url('images/gear_200.png') no-repeat;
   width: 200px;
   height: 200px;
   margin-top: 80px;
@@ -558,7 +558,7 @@ a:focus {
 }
 
 .container-gears .gear3 {
-  background: url('/images/gear_150.png') no-repeat;
+  background: url('images/gear_150.png') no-repeat;
   width: 150px;
   height: 150px;
   position: absolute;
@@ -568,7 +568,7 @@ a:focus {
 }
 
 .container-gears .gear4 {
-  background: url('/images/gear_80.png') no-repeat;
+  background: url('images/gear_80.png') no-repeat;
   width: 80px;
   height: 80px;
   margin-left: 125px;
